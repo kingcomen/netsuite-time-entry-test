@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduledscript scriptid="customscript_ss_time_entry_test">
+  <description>Phase 1 acceptance test runner for Time Entry custom record</description>
+  <isinactive>F</isinactive>
+  <name>SS Time Entry Test</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/time-entry/ss_time_entry_test.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_time_entry_test">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+<status>TESTING</status>
+      <title>Run Time Entry Tests</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
