@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suitelet scriptid="customscript_sl_te_ui">
+  <name>SL Time Entry UI</name>
+  <description>Serves the Time Entry SPA HTML (Alpine.js + Tailwind)</description>
+  <isinactive>F</isinactive>
+  <notifyadmins>F</notifyadmins>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/time-entry/ui/sl_te_ui.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_te_ui">
+      <allemployees>T</allemployees>
+      <allroles>T</allroles>
+      <audslctrole/>
+      <availablewithoutlogin>T</availablewithoutlogin>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>Time Entry App</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

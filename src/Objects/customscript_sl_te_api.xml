@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suitelet scriptid="customscript_sl_te_api">
+  <name>SL Time Entry API</name>
+  <description>JSON API Suitelet for Time Entry UI — action-based router</description>
+  <isinactive>F</isinactive>
+  <notifyadmins>F</notifyadmins>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/time-entry/ui/sl_te_api.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_te_api">
+      <allemployees>T</allemployees>
+      <allroles>T</allroles>
+      <audslctrole/>
+      <availablewithoutlogin>T</availablewithoutlogin>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>Time Entry API</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>
