@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usereventscript scriptid="customscript_ue_time_entry">
+  <description>Validates Hours field on Time Entry custom record</description>
+  <isinactive>F</isinactive>
+  <name>UE Time Entry Validate</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/time-entry/ue_time_entry_validate.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ue_time_entry">
+      <allemployees>T</allemployees>
+      <allroles>T</allroles>
+      <audslctrole/>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>[scriptid=customrecord_time_entry]</recordtype>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

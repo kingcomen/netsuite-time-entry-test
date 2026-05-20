@@ -11,8 +11,6 @@
   <allowquickadd>F</allowquickadd>
   <allowquicksearch>T</allowquicksearch>
   <allowuiaccess>T</allowuiaccess>
-  <enablecurrencies>F</enablecurrencies>
-  <islocked>F</islocked>
   <isordered>F</isordered>
   <customrecordcustomfields>
 
