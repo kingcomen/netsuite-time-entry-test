@@ -24,7 +24,12 @@ define(['N/query', 'N/record', 'N/log', 'N/error'], (query, record, log, error) 
     const actions = {
 
         employees: () => sql(
-            `SELECT id, entityid AS name FROM employee WHERE isinactive = 'F' ORDER BY entityid`
+            `SELECT id,
+                    COALESCE(firstname, '') || ' ' || COALESCE(lastname, '') AS name
+             FROM employee
+             WHERE isinactive = 'F'
+               AND (firstname IS NOT NULL OR lastname IS NOT NULL)
+             ORDER BY lastname, firstname`
         ),
 
         projects: () => sql(
