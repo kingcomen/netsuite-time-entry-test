@@ -3,7 +3,7 @@
 **เวอร์ชัน:** 1.0  
 **วันที่:** 2026-05-20  
 **ผู้เขียน:** Wichit Comen  
-**สถานะ:** In Progress — Phase 1 deployed, manual testing pending  
+**สถานะ:** In Progress — Phase 1+2 deployed, manual testing pending  
 **สภาพแวดล้อมทดสอบ:** NetSuite Sandbox `8158655-sb2`
 
 ---
@@ -85,11 +85,13 @@ US-04  ในฐานะ Developer ฉันต้องการ query ข้�
 - [ ] List View แสดง Employee, Work Date, Hours, Project ถูกต้อง *(manual test)*
 - [ ] SuiteQL TEST 1–5 รันใน SuiteQL Editor คืนผลถูกต้อง *(manual test)*
 
-### Phase 2 — Production Ready *(ไม่อยู่ใน scope นี้)*
+### Phase 2 — Production Ready
 
-- [ ] Duplicate check (Employee + Date + Project)
-- [ ] Approval workflow
-- [ ] Role-based access control
+- [x] Duplicate check (Employee + Date + Project) — `ue_time_entry_validate.js` `checkDuplicate()`
+- [x] Role-based access control — permissions block ใน `customrecord_time_entry.xml` (ADMINISTRATOR/BOOKKEEPER/EMPLOYEE_CENTER)
+- [x] TC-07/08/09 test cases สำหรับ duplicate check ใน `ss_time_entry_test.js`
+- [ ] เปิด "Use Permission List" จาก UI — Setup → Customization → Record Types → Time Entry Test → ติ๊ก **Use Permission List** *(SDF ไม่รองรับ field นี้)*
+- [ ] Approval workflow *(Phase 3)*
 
 ---
 

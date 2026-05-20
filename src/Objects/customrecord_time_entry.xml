@@ -12,6 +12,23 @@
   <allowquicksearch>T</allowquicksearch>
   <allowuiaccess>T</allowuiaccess>
   <isordered>F</isordered>
+
+  <!-- RBAC: who can create/edit/delete this record type -->
+  <permissions>
+    <permission>
+      <permittedrole>ADMINISTRATOR</permittedrole>
+      <permittedlevel>FULL</permittedlevel>
+    </permission>
+    <permission>
+      <permittedrole>BOOKKEEPER</permittedrole>
+      <permittedlevel>EDIT</permittedlevel>
+    </permission>
+    <permission>
+      <permittedrole>EMPLOYEE_CENTER</permittedrole>
+      <permittedlevel>EDIT</permittedlevel>
+    </permission>
+  </permissions>
+
   <customrecordcustomfields>
 
     <!-- Field 1: Employee -->
