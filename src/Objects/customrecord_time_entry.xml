@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customrecordtype scriptid="customrecord_time_entry">
+  <recordname>Time Entry Test</recordname>
+  <isinactive>F</isinactive>
+  <allowattachments>F</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>F</allowinlinedetaching>
+  <allowinlineediting>T</allowinlineediting>
+  <allowmobileaccess>F</allowmobileaccess>
+  <allownumberingoverride>F</allownumberingoverride>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>T</allowquicksearch>
+  <allowuiaccess>T</allowuiaccess>
+  <enablecurrencies>F</enablecurrencies>
+  <islocked>F</islocked>
+  <isordered>F</isordered>
+  <customrecordcustomfields>
+
+    <!-- Field 1: Employee -->
+    <customrecordcustomfield scriptid="custrecord_te_employee">
+      <label>Employee</label>
+      <fieldtype>SELECT</fieldtype>
+      <selectrecordtype>-4</selectrecordtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <showinlist>T</showinlist>
+      <searchlevel>2</searchlevel>
+      <accesslevel>2</accesslevel>
+      <isformula>F</isformula>
+      <isparent>F</isparent>
+      <storevalue>T</storevalue>
+      <encryptatrest>F</encryptatrest>
+      <globalsearch>F</globalsearch>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+    </customrecordcustomfield>
+
+    <!-- Field 2: Work Date -->
+    <customrecordcustomfield scriptid="custrecord_te_work_date">
+      <label>Work Date</label>
+      <fieldtype>DATE</fieldtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <showinlist>T</showinlist>
+      <searchlevel>2</searchlevel>
+      <accesslevel>2</accesslevel>
+      <isformula>F</isformula>
+      <isparent>F</isparent>
+      <storevalue>T</storevalue>
+      <encryptatrest>F</encryptatrest>
+      <globalsearch>F</globalsearch>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+    </customrecordcustomfield>
+
+    <!-- Field 3: Hours -->
+    <customrecordcustomfield scriptid="custrecord_te_hours">
+      <label>Hours</label>
+      <fieldtype>FLOAT</fieldtype>
+      <ismandatory>T</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <showinlist>T</showinlist>
+      <searchlevel>2</searchlevel>
+      <accesslevel>2</accesslevel>
+      <isformula>F</isformula>
+      <isparent>F</isparent>
+      <storevalue>T</storevalue>
+      <encryptatrest>F</encryptatrest>
+      <globalsearch>F</globalsearch>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+      <minvalue>0</minvalue>
+    </customrecordcustomfield>
+
+    <!-- Field 4: Project -->
+    <customrecordcustomfield scriptid="custrecord_te_project">
+      <label>Project</label>
+      <fieldtype>SELECT</fieldtype>
+      <selectrecordtype>-7</selectrecordtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <showinlist>T</showinlist>
+      <searchlevel>2</searchlevel>
+      <accesslevel>2</accesslevel>
+      <isformula>F</isformula>
+      <isparent>F</isparent>
+      <storevalue>T</storevalue>
+      <encryptatrest>F</encryptatrest>
+      <globalsearch>F</globalsearch>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+    </customrecordcustomfield>
+
+    <!-- Field 5: Notes -->
+    <customrecordcustomfield scriptid="custrecord_te_notes">
+      <label>Notes</label>
+      <fieldtype>TEXTAREA</fieldtype>
+      <ismandatory>F</ismandatory>
+      <displaytype>NORMAL</displaytype>
+      <showinlist>F</showinlist>
+      <searchlevel>2</searchlevel>
+      <accesslevel>2</accesslevel>
+      <isformula>F</isformula>
+      <isparent>F</isparent>
+      <storevalue>T</storevalue>
+      <encryptatrest>F</encryptatrest>
+      <globalsearch>F</globalsearch>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+    </customrecordcustomfield>
+
+  </customrecordcustomfields>
+</customrecordtype>
