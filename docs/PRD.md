@@ -3,7 +3,7 @@
 **เวอร์ชัน:** 1.0  
 **วันที่:** 2026-05-20  
 **ผู้เขียน:** Wichit Comen  
-**สถานะ:** Draft  
+**สถานะ:** In Progress — Phase 1 deployed, manual testing pending  
 **สภาพแวดล้อมทดสอบ:** NetSuite Sandbox `8158655-sb2`
 
 ---
@@ -76,12 +76,14 @@ US-04  ในฐานะ Developer ฉันต้องการ query ข้�
 
 ### Phase 1 — POC บน Sandbox (scope ของ repo นี้)
 
-- [ ] SDF deploy สำเร็จบน `8158655-sb2` โดยไม่มี error
-- [ ] สร้าง Time Entry record ใหม่ได้จาก UI ครบ 5 fields
-- [ ] Validation: บันทึกโดยไม่กรอก Employee หรือ Work Date → แสดง error
-- [ ] Validation: กรอก Hours = 0 หรือค่าติดลบ → แสดง error
-- [ ] List View แสดง Employee, Work Date, Hours, Project ถูกต้อง
-- [ ] SuiteQL query คืนข้อมูลถูกต้อง (ดู Section 7)
+- [x] SDF deploy สำเร็จบน `teibto-sb2` (4089685_SB2) โดยไม่มี error
+- [x] UserEvent script validate Hours (> 0, ≤ 24) — deployed
+- [x] SuiteQL test queries เขียนไว้ใน `src/FileCabinet/SuiteScripts/time-entry/suiteql_tests.sql`
+- [ ] สร้าง Time Entry record ใหม่ได้จาก UI ครบ 5 fields *(manual test)*
+- [ ] Validation: บันทึกโดยไม่กรอก Employee หรือ Work Date → แสดง error *(manual test)*
+- [ ] Validation: กรอก Hours = 0 หรือค่าติดลบ → แสดง error *(manual test)*
+- [ ] List View แสดง Employee, Work Date, Hours, Project ถูกต้อง *(manual test)*
+- [ ] SuiteQL TEST 1–5 รันใน SuiteQL Editor คืนผลถูกต้อง *(manual test)*
 
 ### Phase 2 — Production Ready *(ไม่อยู่ใน scope นี้)*
 
